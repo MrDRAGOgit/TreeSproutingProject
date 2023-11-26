@@ -57,8 +57,8 @@ for i in range(N + 2):
 A[N][int(N/2)] = 2
 
 for i in range(random.randint(0, N)):
-    gridcalc(A)
-print(A)
+    gridcalc_old(A)
+#print(A)
 plt.imshow(A, interpolation="nearest", origin="upper")
 plt.colorbar()
 plt.show()
