@@ -56,9 +56,14 @@ for i in range(N + 2):
             A[i][j] = -1
 A[N][int(N/2)] = 2
 
-for i in range(random.randint(0, N)):
-    gridcalc_old(A)
-#print(A)
+plt.figure(1)
+plt.subplot(111)
 plt.imshow(A, interpolation="nearest", origin="upper")
 plt.colorbar()
+for i in range(random.randint(0, N)):
+    gridcalc_old(A)
+    plt.imshow(A, interpolation="nearest", origin="upper")
+    plt.pause(0.1)
+
+plt.imshow(A, interpolation="nearest", origin="upper")
 plt.show()
