@@ -37,6 +37,7 @@ def gridcalc_old(A):
         for j in range(1, N):
             A[i][j] = B[i][j]
 
+
 def gridcalc(A):
     B = [[0 for j in range(N + 2)] for i in range(N + 2)]
     for i in range(1, N):
@@ -54,6 +55,7 @@ def gridcalc(A):
     for i in range(1, N):
         for j in range(1, N):
             A[i][j] = B[i][j]
+
 
 A = [[0 for j in range(N + 2)] for i in range(N + 2)]
 for i in range(N + 2):
