@@ -6,6 +6,7 @@ turtle.left(90)
 turtle.pendown()
 turtle.hideturtle()
 import random
+#what
 
 axiom = '2222220'
 axTemp = ''
